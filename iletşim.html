@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Link File CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            color: aliceblue;
+            text-align: center;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scrolling on the body */
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1; /* Ensure the header is above the video */
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 800px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 2; /* Ensure the contact form is above the video */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: red;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: red;
+        }
+
+        .video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <video src="./img/pexels-ojyrai-7875596 (1080p).mp4" class="video" autoplay muted loop></video>
+
+    <header>
+        <nav>
+            <nav>
+                <img src="img/indir.png" class="logo" alt="">
+                <div class="menu">
+    
+                    <a href="index.html">Anasayfa</a>
+                    <a href="hakkımızda.html">Hakkımızda</a>
+                    <div class="dropdown">
+                        <a href="">Modeller</a>
+                        <div class="dropdown-content">
+                          <a href="bmw.html">Bmw Suv</a>
+                          <a href="sedan.html">Bmw Sedan</a>
+                          <a href="coupe.html">Bmw Coupe</a>
+                        </div>
+                      </div>
+                      <div class="dropdown">
+                        <a href="">Bayiler</a>
+                        <div class="dropdown-content">
+                          <a href="https://borusanoto.bmw.com.tr/ekibimiz/ankara">Ankara</a>
+                          <a href="https://borusanoto.bmw.com.tr/ekibimiz/istanbul">İstanbul</a>
+                          <a href="https://borusanoto.bmw.com.tr">Karaman</a>
+                        </div>
+                      </div>
+                      <div class="dropdown">
+                        <a href="iletşim.html">İletişim</a>
+                     
+                      </div>
+                    <a href="rezervasyon.html">Rezervasyon</a>
+                    <a href="https://www.borusanoto.com/hizmet-noktalarimiz">Konum</a>
+                </div>
+    
+                <div class="social">
+                  <a href="https://www.facebook.com/BMW/"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/BMW"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/bmw/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </nav>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>İletişim</h1>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <label for="name">Ad Soyad:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mesajınız:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <p>tahaknkl2323@gmail.com</p>
+            <p>Telefon: +90 123 456 7890</p>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Your footer code goes here -->
+    </footer>
+</body>
+
+</html>
